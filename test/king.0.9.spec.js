@@ -76,8 +76,7 @@ describe('King', function(){
                     name:'__test',
                     upstream_url:'http://localhost:9000',
                     request_path:'/test',
-                    strip_request_path:true,
-                    request_path:'/test'
+                    strip_request_path:true
                 }]
                 ,onSync: function(){
                     done();
@@ -108,7 +107,6 @@ describe('King', function(){
                     upstream_url:'http://localhost:9000',
                     request_path:'/test',
                     strip_request_path:true,
-                    request_path:'/test',
                     plugins:{
                         'http-log':{
                             config:{
@@ -135,8 +133,7 @@ describe('King', function(){
                     name:'__test',
                     upstream_url:'localhost:9000',
                     request_path:'/test',
-                    strip_request_path:true,
-                    request_path:'/test'
+                    strip_request_path:true
                 }]
             });
             k.sync()
@@ -160,7 +157,6 @@ describe('King', function(){
                     upstream_url:'http://localhost:9000',
                     request_path:'/test',
                     strip_request_path:true,
-                    request_path:'/test',
                     plugins:{
                         'bad-plugin':{
                             config:{
@@ -192,7 +188,6 @@ describe('King', function(){
                     upstream_url:'http://localhost:9000',
                     request_path:'/test',
                     strip_request_path:true,
-                    request_path:'/test',
                     plugins:{
                         'http-log':{
                             configs:{
@@ -224,7 +219,6 @@ describe('King', function(){
                     upstream_url:'http://localhost:9000',
                     request_path:'/test',
                     strip_request_path:true,
-                    request_path:'/test',
                     plugins:{
                         'http-log':{
                             config:{
@@ -256,8 +250,7 @@ describe('King', function(){
                     name:'__test',
                     upstream_url:'http://localhost:9000',
                     request_path:'/test',
-                    strip_request_path:false,
-                    request_path:'/test'
+                    strip_request_path:false
                 }]
                 ,onSync:function(){
                     setTimeout(function(){
