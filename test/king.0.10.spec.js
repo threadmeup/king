@@ -76,7 +76,13 @@ describe('King', function(){
                     name:'__test',
                     upstream_url:'http://localhost:9000',
                     uris:['/test'],
-                    strip_uri:true
+                    strip_uri:true,
+                    retries: 7,
+                    upstream_connect_timeout: 90000,
+                    upstream_read_timeout: 90000,
+                    upstream_send_timeout: 90000,
+                    http_if_terminated: false,
+                    https_only: false
                 }]
                 ,onSync: function(){
                     done();
